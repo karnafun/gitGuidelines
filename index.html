@@ -146,6 +146,37 @@ git reset --hard origin/BRANCHNAME
     </div>
   </div>
   
+  
+  
+  
+  
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+      ביצעתי commit לוקאלית ואני מתחרט ורוצה לחזור אחורה לפני שאני דוחף שינויים
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">	  
+		בשביל לבטל את הcommit האחרון (או את האחרונים) נשתמש בreset
+		</br>
+		אם עדיין נרצה את השינויים בפרוייקט, אבל רק לבטל את הcommit, נשתמש בדגל soft
+	  </br> 
+	  <code>git reset --soft HEAD~1</code> 
+	  </br> 
+	  אם נרצה לבטל את הcommit האחרון ולמחוק את כל השינויים שבוצעו בו מהפרוייקט נשתמש בדגל hard
+	  </br> 	  
+	  <code> 
+	  git reset --hard HEAD~1
+	  </code>
+	  </br> 	
+	  התמונה הבאה ממחישה את פעולת reset
+	  </br> 	
+	  <img src="https://i.stack.imgur.com/et1ar.jpg" style="margin-bottom:20px" />
+	  </div>
+    </div>
+	
+  
 </div>
 	
 	</div>
